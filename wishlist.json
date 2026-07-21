@@ -1,0 +1,77 @@
+{
+  "_istruzioni": "Questo campo è solo una nota per te, lo script lo ignora. Ogni SEZIONE ha: id (univoco, senza spazi/accenti), titolo (testo mostrato, puoi metterci l'emoji), colore (esadecimale). Ogni OGGETTO dentro 'oggetti' ha: nome, prezzo (testo libero, es. '€ 49,99'), immagine (URL alla foto, lascia '' per un placeholder), link, nota (testo libero), nuovo (true per mostrare il badge NEW!, false altrimenti). Per aggiungere un oggetto copia una delle voci tra { } e incollala prima della sua parentesi quadra di chiusura, separandola con una virgola. Per aggiungere una sezione copia un intero blocco { ... } dentro 'sezioni' allo stesso modo.",
+
+  "ultimoAggiornamento": "21 Luglio 2026",
+
+  "sezioni": [
+    {
+      "id": "lego",
+      "titolo": "🧱 LEGO",
+      "colore": "#cc0000",
+      "oggetti": [
+        {
+          "nome": "Vespa 125",
+          "prezzo": "$ 99,99",
+          "immagine": "https://www.lego.com/cdn/cs/set/assets/blt1a663eb568ea1092/10298.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
+          "link": "https://www.lego.com/en-us/product/vespa-125-10298",
+          "nota": "Set #10298",
+          "nuovo": false
+        },
+        {
+          "nome": "Batman™ 8in1 Figure",
+          "prezzo": "$ 17,49",
+          "immagine": "https://www.lego.com/cdn/cs/set/assets/blteff607e3d97d13de/40748_Prod.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
+          "link": "https://www.lego.com/en-us/product/batman-8in1-figure-40748",
+          "nota": "Set #40748",
+          "nuovo": true
+        },
+        {
+          "nome": "Tom & Jerry Figures",
+          "prezzo": "$ 14,99",
+          "immagine": "https://www.lego.com/cdn/cs/set/assets/blt84d0ff079d4b2cf2/40793_Prod.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
+          "link": "https://www.lego.com/en-us/product/tom-jerry-figures-40793",
+          "nota": "Set #40793",
+          "nuovo": false
+        },
+        {
+          "nome": "Daily Bugle",
+          "prezzo": "$ 349,99",
+          "immagine": "https://www.lego.com/cdn/cs/set/assets/bltacb0c952668f6829/76178_Prod.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
+          "link": "https://www.lego.com/en-us/product/daily-bugle-76178",
+          "nota": "Set #76178",
+          "nuovo": false
+        }
+      ]
+    },
+    {
+      "id": "elettronica",
+      "titolo": "💻 Elettronica",
+      "colore": "#0066cc",
+      "oggetti": [
+        {
+          "nome": "Nome del gadget",
+          "prezzo": "€ 0,00",
+          "immagine": "",
+          "link": "https://esempio.com",
+          "nota": "Nota facoltativa.",
+          "nuovo": false
+        }
+      ]
+    },
+    {
+      "id": "varie",
+      "titolo": "✨ Varie",
+      "colore": "#9900cc",
+      "oggetti": [
+        {
+          "nome": "Nome dell'oggetto",
+          "prezzo": "€ 0,00",
+          "immagine": "",
+          "link": "https://esempio.com",
+          "nota": "Nota facoltativa.",
+          "nuovo": false
+        }
+      ]
+    }
+  ]
+}
