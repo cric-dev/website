@@ -8,37 +8,129 @@
       "id": "lego",
       "titolo": "🧱 LEGO",
       "colore": "#cc0000",
-      "oggetti": [{"link": "https://www.lego.com/it-it/product/10298", "nome": "10298", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt1a663eb568ea1092/10298.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/40748", "nome": "40748", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/40793", "nome": "40793", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/76178", "nome": "76178", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/10274", "nome": "10274", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt9ffaa6a25dc12db3/10274_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/10276", "nome": "10276", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/76240", "nome": "76240", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/21327", "nome": "21327", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/40683", "nome": "40683", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt715e1c234fe64980/40683_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/40187", "nome": "40187", "immagine": "https://www.lego.com/cdn/product-assets/product.img.pri/40187_Prod.jpg?format=webply&fit=bounds&quality=75&width=500&height=500&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/40461", "nome": "40461", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt5633fe2e6f7d1710/40461.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/10313", "nome": "10313", "immagine": "https://www.lego.com/cdn/cs/set/assets/bltc4a6c2103a34f22e/10313_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/10373", "nome": "10373", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt2c4d86926d510d45/10373_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/10374", "nome": "10374", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt0afd56c00e0b0970/10374_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/10372", "nome": "10372", "immagine": "https://www.lego.com/cdn/cs/set/assets/blteaa1b277ce8483e2/10372_Prod_1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/10315", "nome": "10315", "immagine": "https://www.lego.com/cdn/cs/set/assets/bltc1a3afc5b5af3287/10315.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/10370", "nome": "10370", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt5b9064fcb12ba88b/10370_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/10340", "nome": "10340", "immagine": "https://www.lego.com/cdn/cs/set/assets/bltf6729e5606d1909f/10340_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/21359", "nome": "21359", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt3d6245b2b391c560/21359_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/40818", "nome": "40818", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt1c4908bcdcc54de6/40818_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/21042", "nome": "21042", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/40519", "nome": "40519", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/21345", "nome": "21345", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/77256", "nome": "77256", "immagine": "https://www.lego.com/cdn/cs/set/assets/bltcf1faba2d5f4a688/77256_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/77242", "nome": "77242", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/77251", "nome": "77251", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/77243", "nome": "77243", "immagine": ""
-},{"link": "https://www.lego.com/it-it/product/76344", "nome": "76344", "immagine": "https://www.lego.com/cdn/cs/set/assets/bltce8022e1d28c430d/76344_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/76334", "nome": "76334", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt8596d885c652914b/76334_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
-},{"link": "https://www.lego.com/it-it/product/76269", "nome": "76269", "immagine": "https://www.lego.com/cdn/cs/set/assets/blta1716ca226f20cab/76269.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"}
-      ]
+      "oggetti": [{
+        "link": "https://www.lego.com/it-it/product/10298",
+        "nome": "Vespa 125",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt1a663eb568ea1092/10298.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/40748",
+        "nome": "Personaggio di Batman 8 in 1",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blteff607e3d97d13de/40748_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/40793",
+        "nome": "Personaggi di Tom e Jerry",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt84d0ff079d4b2cf2/40793_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/76178",
+        "nome": "Daily Bugle",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/bltacb0c952668f6829/76178_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/10274",
+        "nome": "ECTO-1 Ghostbusters",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt9ffaa6a25dc12db3/10274_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/10276",
+        "nome": "Colosseo",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt7c4044f7aa529af3/10276_alt2.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/76240",
+        "nome": "Batmobile™ Tumbler",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt755a6d05eac6630d/76240.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/21327",
+        "nome": "Macchina da scrivere",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt505d24ad41366851/21327.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/40683",
+        "nome": "Display floreale",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt715e1c234fe64980/40683_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/40187",
+        "nome": "LEGO Iconic Fiori",
+        "immagine": "https://www.lego.com/cdn/product-assets/product.img.pri/40187_Prod.jpg?format=webply&fit=bounds&quality=75&width=500&height=500&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/40461",
+        "nome": "Tulipani",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt5633fe2e6f7d1710/40461.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/10313",
+        "nome": "Bouquet fiori selvatici",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/bltc4a6c2103a34f22e/10313_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/10373",
+        "nome": "Mini Bonsai",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt2c4d86926d510d45/10373_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/10374",
+        "nome": "Bouquet di rose rosa",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt0afd56c00e0b0970/10374_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/10372",
+        "nome": "Ibisco",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blteaa1b277ce8483e2/10372_Prod_1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/10315",
+        "nome": "Il Giardino Tranquillo",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/bltc1a3afc5b5af3287/10315.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/10370",
+        "nome": "Stella di Natale",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt5b9064fcb12ba88b/10370_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/10340",
+        "nome": "Ghirlanda",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/bltf6729e5606d1909f/10340_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/21359",
+        "nome": "Riviera italiana",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt3d6245b2b391c560/21359_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/40818",
+        "nome": "Cartolina dall’Italia",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt1c4908bcdcc54de6/40818_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/21042",
+        "nome": "Statua della Libertà",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt878ae2d69f884c71/21042_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/40519",
+        "nome": "Cartolina di New York",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/bltae0305908b9ef97a/40519.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/21345",
+        "nome": "Fotocamera Polaroid OneStep SX-70",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blte8587b23a66e7968/21345_alt4.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/77256",
+        "nome": "Macchina del tempo di Ritorno al futuro",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/bltcf1faba2d5f4a688/77256_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/77242",
+        "nome": "Auto da corsa F1® Ferrari SF-24",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt62a0047ef561f2db/77242_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/77251",
+        "nome": "Auto da corsa McLaren F1® Team MCL38",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/bltad441c9411550c97/77251_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/77243",
+        "nome": "Auto da corsa F1® Oracle Red Bull Racing RB20",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt8dac22afe99a2c70/77243_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/76344",
+        "nome": "Iron Man Mark 3 – Edizione del collezionista",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/bltce8022e1d28c430d/76344_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/76334",
+        "nome": "Battaglia epica: Spider-Man vs. Sandman",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blt8596d885c652914b/76334_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }, {
+        "link": "https://www.lego.com/it-it/product/76269",
+        "nome": "Torre degli Avengers",
+        "immagine": "https://www.lego.com/cdn/cs/set/assets/blta1716ca226f20cab/76269.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+    }
+]
+
     },
     {
       "id": "elettronica",
