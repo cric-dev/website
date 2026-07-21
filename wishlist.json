@@ -8,39 +8,36 @@
       "id": "lego",
       "titolo": "🧱 LEGO",
       "colore": "#cc0000",
-      "oggetti": [
-        {
-          "nome": "Vespa 125",
-          "prezzo": "$ 99,99",
-          "immagine": "https://www.lego.com/cdn/cs/set/assets/blt1a663eb568ea1092/10298.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
-          "link": "https://www.lego.com/en-us/product/vespa-125-10298",
-          "nota": "Set #10298",
-          "nuovo": false
-        },
-        {
-          "nome": "Batman™ 8in1 Figure",
-          "prezzo": "$ 17,49",
-          "immagine": "https://www.lego.com/cdn/cs/set/assets/blteff607e3d97d13de/40748_Prod.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
-          "link": "https://www.lego.com/en-us/product/batman-8in1-figure-40748",
-          "nota": "Set #40748",
-          "nuovo": true
-        },
-        {
-          "nome": "Tom & Jerry Figures",
-          "prezzo": "$ 14,99",
-          "immagine": "https://www.lego.com/cdn/cs/set/assets/blt84d0ff079d4b2cf2/40793_Prod.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
-          "link": "https://www.lego.com/en-us/product/tom-jerry-figures-40793",
-          "nota": "Set #40793",
-          "nuovo": false
-        },
-        {
-          "nome": "Daily Bugle",
-          "prezzo": "$ 349,99",
-          "immagine": "https://www.lego.com/cdn/cs/set/assets/bltacb0c952668f6829/76178_Prod.png?fit=bounds&format=jpg&quality=80&width=1500&height=1500&dpr=1",
-          "link": "https://www.lego.com/en-us/product/daily-bugle-76178",
-          "nota": "Set #76178",
-          "nuovo": false
-        }
+      "oggetti": [{"link": "https://www.lego.com/it-it/product/10298", "nome": "10298", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt1a663eb568ea1092/10298.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/40748", "nome": "40748", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/40793", "nome": "40793", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/76178", "nome": "76178", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/10274", "nome": "10274", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt9ffaa6a25dc12db3/10274_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/10276", "nome": "10276", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/76240", "nome": "76240", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/21327", "nome": "21327", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/40683", "nome": "40683", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt715e1c234fe64980/40683_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/40187", "nome": "40187", "immagine": "https://www.lego.com/cdn/product-assets/product.img.pri/40187_Prod.jpg?format=webply&fit=bounds&quality=75&width=500&height=500&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/40461", "nome": "40461", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt5633fe2e6f7d1710/40461.jpg?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/10313", "nome": "10313", "immagine": "https://www.lego.com/cdn/cs/set/assets/bltc4a6c2103a34f22e/10313_alt2.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/10373", "nome": "10373", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt2c4d86926d510d45/10373_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/10374", "nome": "10374", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt0afd56c00e0b0970/10374_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/10372", "nome": "10372", "immagine": "https://www.lego.com/cdn/cs/set/assets/blteaa1b277ce8483e2/10372_Prod_1.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/10315", "nome": "10315", "immagine": "https://www.lego.com/cdn/cs/set/assets/bltc1a3afc5b5af3287/10315.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/10370", "nome": "10370", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt5b9064fcb12ba88b/10370_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/10340", "nome": "10340", "immagine": "https://www.lego.com/cdn/cs/set/assets/bltf6729e5606d1909f/10340_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/21359", "nome": "21359", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt3d6245b2b391c560/21359_Prod.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/40818", "nome": "40818", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt1c4908bcdcc54de6/40818_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/21042", "nome": "21042", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/40519", "nome": "40519", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/21345", "nome": "21345", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/77256", "nome": "77256", "immagine": "https://www.lego.com/cdn/cs/set/assets/bltcf1faba2d5f4a688/77256_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/77242", "nome": "77242", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/77251", "nome": "77251", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/77243", "nome": "77243", "immagine": ""
+},{"link": "https://www.lego.com/it-it/product/76344", "nome": "76344", "immagine": "https://www.lego.com/cdn/cs/set/assets/bltce8022e1d28c430d/76344_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/76334", "nome": "76334", "immagine": "https://www.lego.com/cdn/cs/set/assets/blt8596d885c652914b/76334_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"
+},{"link": "https://www.lego.com/it-it/product/76269", "nome": "76269", "immagine": "https://www.lego.com/cdn/cs/set/assets/blta1716ca226f20cab/76269.png?format=webply&fit=bounds&quality=75&width=800&height=800&dpr=1"}
       ]
     },
     {
