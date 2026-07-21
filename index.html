@@ -234,6 +234,41 @@
     display:block;
     margin: 0 auto;
   }
+
+  /* ---------- effetto hover: apertura + parallasse sulle immagini ----------
+     Attivo solo su dispositivi con mouse vero (niente strani effetti sul touch).
+     La cella si "solleva" con z-index mentre l'immagine cresce restando
+     ancorata al suo posto in tabella, poi segue il mouse con un tilt 3D. */
+  @media (hover:hover) and (pointer:fine){
+
+    .col-img{
+      position: relative;
+      perspective: 700px;
+      z-index: 1;
+    }
+    .col-img.cella-attiva{ z-index: 60; }
+
+    .col-img img{
+      --scala: 1;
+      --tiltx: 0deg;
+      --tilty: 0deg;
+      --spostax: 0px;
+      --sposta-y: 0px;
+      position: relative;
+      transform: scale(var(--scala)) translate(var(--spostax), var(--sposta-y)) rotateX(var(--tiltx)) rotateY(var(--tilty));
+      transition: transform .28s cubic-bezier(.22,1,.36,1), box-shadow .28s ease;
+      will-change: transform;
+      cursor: pointer;
+    }
+
+    .col-img img.img-attiva{
+      --scala: 2.7;
+      box-shadow:
+        0 14px 28px rgba(0,0,0,0.55),
+        0 0 0 3px var(--cyan),
+        0 0 18px 2px var(--hot-pink);
+    }
+  }
   .prezzo{ font-family: var(--font-mono); font-weight:bold; color:#006600; }
   .link-btn{
     display:inline-block;
@@ -482,6 +517,44 @@ function costruisciSezione(sezione) {
     </section>`;
 }
 
+/* ---------- effetto hover con apertura + parallasse sulle immagini ----------
+   Va richiamata ogni volta che le sezioni vengono ricostruite, perché le
+   <img> sono generate dinamicamente e vanno riagganciate agli eventi. */
+function attivaEffettoImmagini() {
+  document.querySelectorAll('.col-img img').forEach(img => {
+    const cella = img.closest('.col-img');
+
+    img.addEventListener('mouseenter', () => {
+      img.classList.add('img-attiva');
+      if (cella) cella.classList.add('cella-attiva');
+    });
+
+    img.addEventListener('mousemove', (evento) => {
+      const rettangolo = img.getBoundingClientRect();
+      // posizione del mouse dentro l'immagine, da -0.5 a 0.5
+      const x = (evento.clientX - rettangolo.left) / rettangolo.width - 0.5;
+      const y = (evento.clientY - rettangolo.top) / rettangolo.height - 0.5;
+
+      const inclinazioneMax = 18; // gradi di tilt
+      const spostamentoMax = 14;  // px di parallasse
+
+      img.style.setProperty('--tilty', (x * inclinazioneMax) + 'deg');
+      img.style.setProperty('--tiltx', (-y * inclinazioneMax) + 'deg');
+      img.style.setProperty('--spostax', (x * spostamentoMax) + 'px');
+      img.style.setProperty('--sposta-y', (y * spostamentoMax) + 'px');
+    });
+
+    img.addEventListener('mouseleave', () => {
+      img.classList.remove('img-attiva');
+      if (cella) cella.classList.remove('cella-attiva');
+      img.style.setProperty('--tiltx', '0deg');
+      img.style.setProperty('--tilty', '0deg');
+      img.style.setProperty('--spostax', '0px');
+      img.style.setProperty('--sposta-y', '0px');
+    });
+  });
+}
+
 function mostraErrore(messaggio) {
   document.getElementById('sezioni-container').innerHTML = `
     <div class="errore-box">
@@ -519,6 +592,8 @@ async function caricaWishlist() {
     // sezioni + tabelle, separate da righe arcobaleno
     const htmlSezioni = sezioni.map(costruisciSezione).join('<div class="rainbow-rule"></div>');
     document.getElementById('sezioni-container').innerHTML = htmlSezioni;
+
+    attivaEffettoImmagini();
 
   } catch (errore) {
     console.error('Errore nel caricamento della wishlist:', errore);
