@@ -153,7 +153,7 @@
     }
 ]
 
-    },
+    }, 
     {
       "id": "home-video",
       "titolo": "💿 Blu-Ray e DVD",
@@ -165,35 +165,23 @@
           "link": "https://www.amazon.it/Deadpool-Wolverine-4K-Bd-Hd/dp/B0DJ96BF9P",
           "nota": "",
           "nuovo": false
-        }
-      ]
-    },
+        },
     {
-      "id": "elettronica",
-      "titolo": "💻 Elettronica",
-      "colore": "#0066cc",
-      "oggetti": [
-        {
-          "nome": "Nome del gadget",
-          "prezzo": "€ 0,00",
-          "immagine": "",
-          "link": "https://esempio.com",
-          "nota": "Nota facoltativa.",
+          "nome": "Spider-Man: Across The Spiderverse - 4K",
+          "immagine": "https://m.media-amazon.com/images/I/81PV9d3DQyL._SY445_.jpg",
+          "link": "https://www.amazon.it/dp/B0H5KFM48W/?coliid=I1AHA9IE4RXM8H&colid=1CYCESMVMXER1",
+          "prezzo":"€ 17,99"
+          "nota": "",
           "nuovo": false
         }
-      ]
-    },
+
+        ,
     {
-      "id": "varie",
-      "titolo": "✨ Varie",
-      "colore": "#9900cc",
-      "oggetti": [
-        {
-          "nome": "Nome dell'oggetto",
-          "prezzo": "€ 0,00",
-          "immagine": "",
-          "link": "https://esempio.com",
-          "nota": "Nota facoltativa.",
+          "nome": "BATMAN IL RITORNO STEELBOOK (4K Ultra HD + Blu-Ray)",
+          "immagine": "https://m.media-amazon.com/images/I/71lypA1Q7ZL._SX342_.jpg",
+          "link": "https://www.amazon.it/dp/B0B15HDKWR/?coliid=I22K16PR3E9UQA&colid=41PMMQUA6M54&psc=1",
+          "prezzo":"€ 30"
+          "nota": "",
           "nuovo": false
         }
       ]
