@@ -236,37 +236,42 @@
   }
 
   /* ---------- effetto hover: apertura + parallasse sulle immagini ----------
-     Attivo solo su dispositivi con mouse vero (niente strani effetti sul touch).
-     La cella si "solleva" con z-index mentre l'immagine cresce restando
-     ancorata al suo posto in tabella, poi segue il mouse con un tilt 3D. */
+     Attivo solo su dispositivi con mouse vero (niente effetti strani sul touch).
+     Invece di ingrandire con transform:scale (che ingigantisce la miniatura
+     già piccola e la fa risultare sgranata), all'hover viene creato un
+     "clone" della stessa immagine, con dimensioni reali maggiori: così il
+     browser la disegna sfruttando la risoluzione vera del file originale.
+     Il clone vive in #zoom-layer, sopra a tutto il resto della pagina, e
+     resta visivamente ancorato al centro della miniatura di partenza. */
   @media (hover:hover) and (pointer:fine){
 
-    .col-img{
-      position: relative;
-      perspective: 700px;
-      z-index: 1;
-    }
-    .col-img.cella-attiva{ z-index: 60; }
+    .col-img img{ cursor: pointer; }
 
-    .col-img img{
-      --scala: 1;
-      --tiltx: 0deg;
-      --tilty: 0deg;
-      --spostax: 0px;
-      --sposta-y: 0px;
-      position: relative;
-      transform: scale(var(--scala)) translate(var(--spostax), var(--sposta-y)) rotateX(var(--tiltx)) rotateY(var(--tilty));
-      transition: transform .28s cubic-bezier(.22,1,.36,1), box-shadow .28s ease;
-      will-change: transform;
-      cursor: pointer;
+    #zoom-layer{
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 9999;
+      perspective: 900px;
     }
 
-    .col-img img.img-attiva{
-      --scala: 2.7;
+    .img-zoom-clone{
+      position: absolute;
+      pointer-events: auto;
+      object-fit: cover;
+      background:#fff;
+      border: 2px solid #000;
       box-shadow:
         0 14px 28px rgba(0,0,0,0.55),
         0 0 0 3px var(--cyan),
         0 0 18px 2px var(--hot-pink);
+      transition:
+        width .3s cubic-bezier(.22,1,.36,1),
+        height .3s cubic-bezier(.22,1,.36,1),
+        left .3s cubic-bezier(.22,1,.36,1),
+        top .3s cubic-bezier(.22,1,.36,1),
+        transform .15s ease-out;
+      cursor: pointer;
     }
   }
   .prezzo{ font-family: var(--font-mono); font-weight:bold; color:#006600; }
@@ -519,38 +524,101 @@ function costruisciSezione(sezione) {
 
 /* ---------- effetto hover con apertura + parallasse sulle immagini ----------
    Va richiamata ogni volta che le sezioni vengono ricostruite, perché le
-   <img> sono generate dinamicamente e vanno riagganciate agli eventi. */
+   <img> sono generate dinamicamente e vanno riagganciate agli eventi.
+
+   Invece di ingrandire la miniatura con transform:scale (che la fa apparire
+   sgranata, perché scala una bitmap già piccola), qui viene creato un
+   "clone" a parte, con una width/height reali più grandi: il browser lo
+   ridisegna sfruttando la risoluzione vera del file immagine, quindi il
+   risultato resta nitido finché il file originale è abbastanza grande.
+   Se il file sorgente è già piccolo (es. 70x70), l'ingrandimento viene
+   limitato di conseguenza, per non produrre comunque sgranatura. */
+
+const FATTORE_INGRANDIMENTO = 3.4;   // quanto crescere rispetto alla miniatura
+const DIMENSIONE_MASSIMA_PX = 320;   // tetto massimo, anche con foto enormi
+
+function ottieniLivelloZoom() {
+  let livello = document.getElementById('zoom-layer');
+  if (!livello) {
+    livello = document.createElement('div');
+    livello.id = 'zoom-layer';
+    document.body.appendChild(livello);
+  }
+  return livello;
+}
+
 function attivaEffettoImmagini() {
+  const livelloZoom = ottieniLivelloZoom();
+
   document.querySelectorAll('.col-img img').forEach(img => {
-    const cella = img.closest('.col-img');
-
     img.addEventListener('mouseenter', () => {
-      img.classList.add('img-attiva');
-      if (cella) cella.classList.add('cella-attiva');
-    });
-
-    img.addEventListener('mousemove', (evento) => {
       const rettangolo = img.getBoundingClientRect();
-      // posizione del mouse dentro l'immagine, da -0.5 a 0.5
-      const x = (evento.clientX - rettangolo.left) / rettangolo.width - 0.5;
-      const y = (evento.clientY - rettangolo.top) / rettangolo.height - 0.5;
+      const centroX = rettangolo.left + rettangolo.width / 2;
+      const centroY = rettangolo.top + rettangolo.height / 2;
 
-      const inclinazioneMax = 18; // gradi di tilt
-      const spostamentoMax = 14;  // px di parallasse
+      // non ingrandire mai oltre la risoluzione reale del file, altrimenti
+      // torneremmo al problema della sgranatura
+      const risoluzioneReale = Math.min(
+        img.naturalWidth || DIMENSIONE_MASSIMA_PX,
+        img.naturalHeight || DIMENSIONE_MASSIMA_PX
+      );
+      const dimensioneTarget = Math.min(
+        rettangolo.width * FATTORE_INGRANDIMENTO,
+        DIMENSIONE_MASSIMA_PX,
+        risoluzioneReale
+      );
 
-      img.style.setProperty('--tilty', (x * inclinazioneMax) + 'deg');
-      img.style.setProperty('--tiltx', (-y * inclinazioneMax) + 'deg');
-      img.style.setProperty('--spostax', (x * spostamentoMax) + 'px');
-      img.style.setProperty('--sposta-y', (y * spostamentoMax) + 'px');
-    });
+      const clone = document.createElement('img');
+      clone.src = img.currentSrc || img.src;
+      clone.alt = img.alt;
+      clone.className = 'img-zoom-clone';
 
-    img.addEventListener('mouseleave', () => {
-      img.classList.remove('img-attiva');
-      if (cella) cella.classList.remove('cella-attiva');
-      img.style.setProperty('--tiltx', '0deg');
-      img.style.setProperty('--tilty', '0deg');
-      img.style.setProperty('--spostax', '0px');
-      img.style.setProperty('--sposta-y', '0px');
+      // stato iniziale: identico, in posizione e dimensione, alla miniatura
+      clone.style.width  = rettangolo.width + 'px';
+      clone.style.height = rettangolo.height + 'px';
+      clone.style.left   = (centroX - rettangolo.width / 2) + 'px';
+      clone.style.top    = (centroY - rettangolo.height / 2) + 'px';
+
+      livelloZoom.appendChild(clone);
+      img.style.visibility = 'hidden';
+
+      // due rAF di fila per essere certi che il primo stato sia stato
+      // disegnato prima di far partire la transizione verso quello grande
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        clone.style.width  = dimensioneTarget + 'px';
+        clone.style.height = dimensioneTarget + 'px';
+        clone.style.left   = (centroX - dimensioneTarget / 2) + 'px';
+        clone.style.top    = (centroY - dimensioneTarget / 2) + 'px';
+      }));
+
+      const alMovimentoMouse = (evento) => {
+        const box = clone.getBoundingClientRect();
+        const x = (evento.clientX - box.left) / box.width - 0.5;
+        const y = (evento.clientY - box.top) / box.height - 0.5;
+        const inclinazioneMax = 16; // gradi di tilt
+        const spostamentoMax = 10;  // px di parallasse
+        clone.style.transform =
+          `translate(${x * spostamentoMax}px, ${y * spostamentoMax}px) ` +
+          `rotateX(${-y * inclinazioneMax}deg) rotateY(${x * inclinazioneMax}deg)`;
+      };
+
+      const allaChiusura = () => {
+        clone.removeEventListener('mousemove', alMovimentoMouse);
+        clone.removeEventListener('mouseleave', allaChiusura);
+
+        clone.style.transform = 'translate(0,0) rotateX(0) rotateY(0)';
+        clone.style.width  = rettangolo.width + 'px';
+        clone.style.height = rettangolo.height + 'px';
+        clone.style.left   = (centroX - rettangolo.width / 2) + 'px';
+        clone.style.top    = (centroY - rettangolo.height / 2) + 'px';
+
+        img.style.visibility = 'visible';
+        clone.addEventListener('transitionend', () => clone.remove(), { once: true });
+        setTimeout(() => clone.remove(), 400); // rete di sicurezza
+      };
+
+      clone.addEventListener('mousemove', alMovimentoMouse);
+      clone.addEventListener('mouseleave', allaChiusura);
     });
   });
 }
