@@ -155,6 +155,20 @@
 
     },
     {
+      "id": "home-video",
+      "titolo": "💿 Blu-Ray e DVD",
+      "colore": "#0066cc",
+      "oggetti": [
+        {
+          "nome": "Deadpool & Wolverine (2024)",
+          "immagine": "https://m.media-amazon.com/images/I/71uflXIObgL._SY445_.jpg",
+          "link": "https://www.amazon.it/Deadpool-Wolverine-4K-Bd-Hd/dp/B0DJ96BF9P",
+          "nota": "",
+          "nuovo": false
+        }
+      ]
+    },
+    {
       "id": "elettronica",
       "titolo": "💻 Elettronica",
       "colore": "#0066cc",
